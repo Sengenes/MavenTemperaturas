@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Datos validos",
+        "description": "",
+        "id": "conversor-de-temperaturas;datos-validos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 8,
+            "name": "un dato de tipo numero",
+            "keyword": "Given "
+          },
+          {
+            "line": 9,
+            "name": "es ingresado en el campo de input \"1\"",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170969211,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se muestra el resultado de la temperatura",
+            "match": {
+              "location": "StepsDef.EntoncesResultado()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Datos invalidos",
+        "description": "",
+        "id": "conversor-de-temperaturas;datos-invalidos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 13,
+            "name": "un dato de tipo texto",
+            "keyword": "Given "
+          },
+          {
+            "line": 14,
+            "name": "es ingresado en el campo de input \"e\"",
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169065651,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "se muestra un error",
+            "match": {
+              "location": "StepsDef.EntoncesError()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Conversor de temperaturas",
+    "description": "\r\nComo usuario,\r\nnecesito convertir valores de temperaturas\r\npara conocer el equivalente de n°C expresado en °F",
+    "id": "conversor-de-temperaturas",
+    "keyword": "Feature",
+    "uri": "C:\\Users\\angeles.sengenes\\Documents\\Java\\Maven projects\\MavenTemperaturas\\src\\test\\resources\\MavenTemperaturas.feature"
+  }
+]
